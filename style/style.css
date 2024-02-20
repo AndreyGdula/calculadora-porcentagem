@@ -163,10 +163,14 @@ div#type-d, div#type-e {
     background-color: transparent;
     border-color: var(--color-main);
     height: 40px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 1.05em;
+ }
+
+ select:hover {
+    background-color: rgb(179, 247, 179);
  }
 
 hr {

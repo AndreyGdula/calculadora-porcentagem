@@ -32,37 +32,29 @@ function typeC() {
 }
 
 function typeD() {
+    let select = document.querySelector("select#select-d").value
     let valorD = Number(document.querySelector("input#valor-d").value)
     let cemD = Number(document.querySelector("input#cem-d").value)
     let resInputD = document.querySelector("input#type-d")
 
-    let resultadoD = ((valorD * (cemD + 100)) / 100).toFixed(2)
+    if (select == "aumentar") {
+        var resultadoD = ((valorD * (cemD + 100)) / 100).toFixed(2)
+    } else {
+        var resultadoD = ((valorD * (100 - cemD)) / 100).toFixed(2)
+    }
     resInputD.value = resultadoD.toString()
 }
 
 function typeE() {
-    let valorE = Number(document.querySelector("input#valor-e").value)
+    let selectE = document.querySelector("select#select-e").value
     let cemE = Number(document.querySelector("input#cem-e").value)
+    let valorE = Number(document.querySelector("input#valor-e").value)
     let resInputE = document.querySelector("input#type-e")
 
-    let resultadoE = ((valorE * cemE) / 100).toFixed(2)
+    if (selectE == "aumentar") {
+        var resultadoE = ((valorE * 100) / (cemE + 100)).toFixed(2)
+    } else {
+        var resultadoE = ((valorE * 100) / (100 - cemE)).toFixed(2)
+    }
     resInputE.value = resultadoE.toString()
-}
-
-function typeF() {
-    let cemF = Number(document.querySelector("input#cem-f").value)
-    let valorF = Number(document.querySelector("input#valor-f").value)
-    let resInputF = document.querySelector("input#type-f")
-
-    let resultadoF = ((valorF * 100) / (cemF + 100)).toFixed(2)
-    resInputF.value = resultadoF.toString()
-}
-
-function typeG() {
-    let cemG = Number(document.querySelector("input#cem-g").value)
-    let valorG = Number(document.querySelector("input#valor-g").value)
-    let resInputG = document.querySelector("input#type-g")
-
-    let resultadoG = ((valorG * 100) / (100 - cemG)).toFixed(2)
-    resInputG.value = resultadoG.toString()
 }

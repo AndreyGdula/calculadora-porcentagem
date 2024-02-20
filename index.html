@@ -43,40 +43,28 @@
             <div class="form" id="type-d">
                 <label for="">Tenho o valor de </label>
                 <input type="number" class="valor" placeholder="valor" id="valor-d">
-                <label for="">e quero aumentar </label>
+                <label for="">e quero </label>
+                <select name="type-d" id="select-d">
+                    <option value="aumentar">aumentar</option>
+                    <option value="diminuir">diminuir</option>
+                </select>
                 <input type="number" class="cem" placeholder="%" id="cem-d">
                 <input type="submit" value="CALCULAR" onclick="typeD()">
                 <input type="text" class="res" value="resultado" id="type-d" disabled>
             </div>
             <hr>
             <div class="form" id="type-e">
-                <label for="">Tenho o valor de </label>
-                <input type="number" class="valor" placeholder="valor" id="valor-e">
-                <label for="">e quero diminuir </label>
+                <label for="">Valor </label>
+                <select name="type-e" id="select-e">
+                    <option value="aumentar">aumentou</option>
+                    <option value="diminuir">diminuiu</option>
+                </select>
                 <input type="number" class="cem" placeholder="%" id="cem-e">
+                <label for="">e passou para </label>
+                <input type="number" class="valor" placeholder="valor" id="valor-e">
                 <input type="submit" value="CALCULAR" onclick="typeE()">
-                <input type="text" class="res" value="resultado" id="type-e" disabled>
-            </div>
-            <hr>
-            <div class="form" id="type-f">
-                <label for="">Valor aumentou </label>
-                <input type="number" class="cem" placeholder="%" id="cem-f">
-                <label for="">e passou para </label>
-                <input type="number" class="valor" placeholder="valor" id="valor-f">
-                <input type="submit" value="CALCULAR" onclick="typeF()">
                 <abbr title="valor inicial">
-                    <input type="text" class="res" value="resultado" id="type-f" disabled>
-                </abbr>
-            </div>
-            <hr>
-            <div class="form" id="type-g">
-                <label for="">Valor diminuiu </label>
-                <input type="number" class="cem" placeholder="%" id="cem-g">
-                <label for="">e passou para </label>
-                <input type="number" class="valor" placeholder="valor" id="valor-g">
-                <input type="submit" value="CALCULAR" onclick="typeG()">
-                <abbr title="valor inicial">
-                    <input type="text" class="res" value="resultado" id="type-g" disabled>
+                    <input type="text" class="res" value="resultado" id="type-e" disabled>
                 </abbr>
             </div>
             <hr>

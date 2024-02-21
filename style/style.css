@@ -33,6 +33,11 @@ header > h1 {
     margin: 20px 10px;
 }
 
+hr {
+    border-color: var(--color-main);
+    margin: 20px 0px;
+}
+
 @media only screen and (max-width: 767px) {
     section {
         background-color: white;
@@ -268,14 +273,9 @@ header > h1 {
         font-size: 1.05em;
      }
     
-     select:hover {
+    select:hover {
         background-color: rgb(179, 247, 179);
      }
-    
-    hr {
-        border-color: var(--color-main);
-        margin: 20px 0px;
-    }
     
     .res {
         width: 100px;

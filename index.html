@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentagem</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
+    
     <link rel="stylesheet" href="style/media-query.css">
 </head>
 <body>
@@ -44,29 +44,29 @@
             <div class="form" id="type-d">
                 <label for="">Tenho o valor de </label>
                 <input type="number" class="valor" placeholder="valor" id="valor-d">
-                <label for="">e quero </label>
-                <select name="type-d" id="select-d">
-                    <option value="aumentar">aumentar</option>
-                    <option value="diminuir">diminuir</option>
-                </select>
+                <label for="">e quero
+                    <select name="type-d" id="select-d">
+                        <option value="aumentar">aumentar</option>
+                        <option value="diminuir">diminuir</option>
+                    </select>
+                </label>
                 <input type="number" class="cem" placeholder="%" id="cem-d">
                 <input type="submit" value="CALCULAR" onclick="typeD()">
                 <input type="text" class="res" value="resultado" id="type-d" disabled>
             </div>
             <hr>
             <div class="form" id="type-e">
-                <label for="">Valor </label>
-                <select name="type-e" id="select-e">
-                    <option value="aumentar">aumentou</option>
-                    <option value="diminuir">diminuiu</option>
-                </select>
+                <label for="">Valor 
+                    <select name="type-e" id="select-e">
+                        <option value="aumentar">aumentou</option>
+                        <option value="diminuir">diminuiu</option>
+                    </select>
+                </label>
                 <input type="number" class="cem" placeholder="%" id="cem-e">
                 <label for="">e passou para </label>
                 <input type="number" class="valor" placeholder="valor" id="valor-e">
                 <input type="submit" value="CALCULAR" onclick="typeE()">
-                <abbr title="valor inicial">
-                    <input type="text" class="res" value="resultado" id="type-e" disabled>
-                </abbr>
+                <input type="text" class="res" value="resultado" id="type-e" disabled>
             </div>
             <hr>
         </section>
